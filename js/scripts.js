@@ -5,7 +5,7 @@ const hello = document.getElementById("hello");
 
 function greeting() {
   alert("Hello!");
-  hello.textContent = "Goodbye";
+  hello.textContent = "Good";
 }
 
 hello.addEventListener("click", greeting);
