@@ -2,10 +2,18 @@ const hello = document.getElementById("hello");
 
 //uncomment below to see what getElementById 'got':
 //console.log(hello);
+var toggle = false;
 
-function greeting() {
-  alert("Hello!");
-  hello.textContent = "Good";
+function greeting(){
+  toggle == true 
+  if (toggle == false){
+    hello.innerText = "Hello"
+    toggle = true 
+  } else if(toggle == true){
+    hello.innerText = "Goodbye"
+    toggle = false;
+  }
+
 }
 
 hello.addEventListener("click", greeting);
